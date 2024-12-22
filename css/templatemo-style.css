@@ -28,7 +28,6 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -193,14 +192,14 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
-  background-color: #ccc;
+  background-color: #eee;
   overflow-x: hidden;
 }
 
 .container {
-  background-color: white;
+  background-color: #eeeeeecc;
 }
 
 p, address {
@@ -212,19 +211,19 @@ p, address {
 .placeholder {
   width: 100%;
   min-height: 460px;
-  background-color: #556E5B;
+  background-color: #a5a5a58f;
 }
 
 .placeholder-2 {
   width: 100%;
   min-height: 220px;
-  background-color: #CFBEA5;
+  background-color: #a5a5a58f;
   position: relative;
   z-index: 998;
 }
 
 .parallax-window {
-  min-height: 460px;
+  min-height: 90vh;
   background: transparent;
   position: relative;
 }
@@ -467,6 +466,10 @@ p, address {
 
 .tm-right {
   align-self: flex-end;
+}
+
+footer {
+  background-color: lightgrey;
 }
 
 .tm-footer {
@@ -850,4 +853,19 @@ address {
 
 .panel p {
   padding: 5px 20px 30px;
+}
+
+
+#fb-root {
+  margin: 0 auto;
+  width: 500px;
+  max-width: 500px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.test {
+  border: 1px solid red;
 }
