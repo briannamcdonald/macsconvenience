@@ -469,7 +469,11 @@ p, address {
 }
 
 footer {
-  background-color: lightgrey;
+  background-color: #464b37;
+}
+
+footer p {
+  color: #eee;
 }
 
 .tm-footer {
@@ -478,7 +482,7 @@ footer {
 }
 
 .tm-footer a {
-  color: #626364;
+  color: #eee;
   text-decoration: none;
 }
 
@@ -714,7 +718,7 @@ footer {
 
 address {
   font-style: normal;
-  margin-bottom: 50px;
+  margin-bottom: 1rem;
 }
 
 .tm-address-box {
@@ -729,8 +733,9 @@ address {
 
 .tm-contact-icon {
   display: inline-block;
-  margin-right: 25px;
-  color: #319966;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
 }
 
 .tm-contact-link {
@@ -738,6 +743,10 @@ address {
   color: #626364;
   margin-bottom: 25px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .tm-contact-social {
@@ -762,8 +771,8 @@ address {
 }
 
 .tm-map-section {
-  padding-top: 40px;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 .tm-info-section {
@@ -864,6 +873,33 @@ address {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.fb-description {
+  margin-bottom: -50px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.contact-subsection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-subsection-title {
+  margin: 0.5rem;
+  color: #464b37;
+  font-weight: 400;
 }
 
 .test {
