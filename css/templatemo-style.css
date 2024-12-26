@@ -391,6 +391,8 @@ p, address {
 
 .tm-gallery-img {
   margin-bottom: 20px;
+  height: 300px;
+  width: 300px;
 }
 
 .tm-gallery-title {
@@ -772,6 +774,7 @@ address {
 
 .tm-map-section {
   padding-bottom: 40px;
+  padding-top: 30px;
   width: 100%;
 }
 
