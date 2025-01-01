@@ -733,6 +733,15 @@ address {
   } 
 }
 
+.hours-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
 .tm-contact-icon {
   display: inline-block;
   margin-right: 5px;
