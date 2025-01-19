@@ -26,9 +26,19 @@
 						</div>
 						<nav class="col-md-6 col-12 tm-nav">
 							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
-								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
-								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+								<li class="tm-nav-li"><a href="#about" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="#updates" class="tm-nav-link">Updates</a></li>
+								<li class="tm-nav-li"><a href="#contact" class="tm-nav-link">Contact</a></li>
+								<script>
+									document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+										anchor.addEventListener('click', function(e) {
+											e.preventDefault();
+											document.querySelector(this.getAttribute('href')).scrollIntoView({
+												behavior: 'smooth'
+											});
+										});
+									});
+								</script>
 							</ul>
 						</nav>	
 					</div>
@@ -37,7 +47,7 @@
 		</div>
 
 		<main>
-			<header class="row tm-welcome-section">
+			<header class="row tm-welcome-section" id="about">
 				<h2 class="col-12 text-center tm-section-title">Welcome to Mac's Convenience!</h2>
 				<p class="col-12 text-center">Mac’s Convenience is a fully equipped gas bar and convenience store. <br />
 					We sell gas, diesel, beer, cigarettes, soft serve, slushies, giftware, and much more!</p>
@@ -102,7 +112,7 @@
 		</div>
 
 		<div>
-			<header class="row tm-welcome-section">
+			<header class="row tm-welcome-section" id="updates">
 				<h2 class="col-12 text-center tm-section-title">Store Updates</h2>
 				<p class="col-12 text-center fb-description">See our Facebook page below for updates on sales, new products, and more.</p>
 			</header>
@@ -128,7 +138,7 @@
 			</div>
 		</div>
 
-		<div class="contact-section">
+		<div class="contact-section" id="contact">
 			<header class="row">
 				<h2 class="col-12 text-center tm-section-title">Find Us</h2>
 			</header>
