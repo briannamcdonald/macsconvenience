@@ -482,8 +482,29 @@ address:last-child {
   align-self: flex-end;
 }
 
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1rem;
+  font-family: 'Roboto Slab', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.back-to-top-btn:hover {
+  background-color: #333;
+}
+
 footer {
-  background-color: #464b37;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer p {
@@ -501,7 +522,7 @@ footer p {
 }
 
 .tm-footer a:hover {
-  color: #1A6692;
+  color: #98dcec;
 }
 
 /* About */
