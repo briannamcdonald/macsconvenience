@@ -192,7 +192,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 17px;
   background-color: #eee;
   overflow-x: hidden;
@@ -227,7 +227,7 @@ address:last-child {
 }
 
 .parallax-window {
-  min-height: 90vh;
+  min-height: 80vh;
   background: transparent;
   position: relative;
 }
@@ -246,27 +246,31 @@ address:last-child {
 }
 
 .tm-header {
-  position: absolute;
-  bottom: 0;
+  position: sticky;
+  top: 0;
   left: 0;
   width: 100%;
   color: white;
   z-index: 1000;
+  background-color: #62291b;
+  padding: 0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tm-header-inner {
-  padding: 40px 50px;
+  padding: 20px 25px;
 }
 
 @media (max-width: 991px) {
   .tm-header-inner {
-    padding: 30px 15px;
+    padding: 15px 7.5px;
   }
 }
 
 .tm-site-logo {
   display: inline-block;
   margin-right: 5px;
+  width: 40px;
 }
 
 .tm-site-text-box {
@@ -274,19 +278,19 @@ address:last-child {
 }
 
 .tm-site-title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
 .tm-site-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .tm-nav {
   text-align: right;
-  margin-top: 30px;
+  margin: auto;
 }
 
 .tm-nav-ul {
@@ -322,13 +326,13 @@ address:last-child {
 
 .tm-welcome-section {
   margin: 60px auto;
-  max-width: 655px;
+  max-width: 680px;
 }
 
 .tm-section-title {
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .tm-gallery {
@@ -821,7 +825,7 @@ address {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   font-size: 1.2rem;
-  font-family: 'Open Sans', Helevetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   color: #999;
   background-color: transparent;
   border: 1px solid #d0d0d0;
@@ -865,7 +869,7 @@ address {
 }
 
 .accordion:after {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 900;
   animation: changeIconBack 0.3s linear;
   content: '\f0d9';

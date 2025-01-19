@@ -6,7 +6,7 @@
     <title>Mac's Convenience</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">  
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 </head>
 <body> 
@@ -14,35 +14,25 @@
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
 		<div class="placeholder">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/test.jpg">
-				<div class="tm-header">
-					<div class="row tm-header-inner">
-						<div class="col-md-6 col-12">
-							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
-							<div class="tm-site-text-box">
-								<h1 class="tm-site-title">Mac's Convenience</h1>
-								<h6 class="tm-site-description">Bay d'Espoir, NL</h6>	
-							</div>
+			<div class="tm-header">
+				<div class="row tm-header-inner">
+					<div class="col-md-6 col-12">
+						<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+						<div class="tm-site-text-box">
+							<h1 class="tm-site-title">Mac's Convenience</h1>
+							<h6 class="tm-site-description">Bay d'Espoir, NL</h6>	
 						</div>
-						<nav class="col-md-6 col-12 tm-nav">
-							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="#about" class="tm-nav-link">About</a></li>
-								<li class="tm-nav-li"><a href="#announcements" class="tm-nav-link">Announcements</a></li>
-								<li class="tm-nav-li"><a href="#contact" class="tm-nav-link">Contact</a></li>
-								<script>
-									document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-										anchor.addEventListener('click', function(e) {
-											e.preventDefault();
-											document.querySelector(this.getAttribute('href')).scrollIntoView({
-												behavior: 'smooth'
-											});
-										});
-									});
-								</script>
-							</ul>
-						</nav>	
 					</div>
+					<nav class="col-md-6 col-12 tm-nav">
+						<ul class="tm-nav-ul">
+							<li class="tm-nav-li"><a href="#about" class="tm-nav-link">ABOUT</a></li>
+							<li class="tm-nav-li"><a href="#announcements" class="tm-nav-link">ANNOUNCEMENTS</a></li>
+							<li class="tm-nav-li"><a href="#contact" class="tm-nav-link">CONTACT</a></li>
+						</ul>
+					</nav>	
 				</div>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/macs1new.jpg">
 			</div>
 		</div>
 
@@ -225,16 +215,12 @@
 	</div>
 	<script src="js/parallax.min.js"></script>
 	<script>
-		$(document).ready(function(){
-			// Handle click on paging links
-			$('.tm-paging-link').click(function(e){
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
 				e.preventDefault();
-				
-				var page = $(this).text().toLowerCase();
-				$('.tm-gallery-page').addClass('hidden');
-				$('#tm-gallery-page-' + page).removeClass('hidden');
-				$('.tm-paging-link').removeClass('active');
-				$(this).addClass("active");
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
 			});
 		});
 	</script>
