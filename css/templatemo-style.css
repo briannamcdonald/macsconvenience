@@ -207,6 +207,10 @@ p, address {
   line-height: 1.8;
 }
 
+address:last-child {
+  margin-bottom: 0.5rem;
+}
+
 /* Set width and height in JS */
 .placeholder {
   width: 100%;
@@ -733,13 +737,21 @@ address {
   } 
 }
 
-.hours-row {
+.hours-row, .contact-row {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   justify-content: space-between;
-  width: 200px;
+  align-items: center;
   margin: 0 auto;
+}
+
+.hours-row {
+  width: 200px;
+}
+
+.hours-row:last-child {
+  margin-bottom: 0;
 }
 
 .tm-contact-icon {
@@ -752,7 +764,7 @@ address {
 .tm-contact-link {
   display: inline-block;
   color: #626364;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -901,6 +913,11 @@ address {
   width: 100%;
 }
 
+.contact-info-section {
+  width: 300px;
+  margin: 20px auto;
+}
+
 .contact-subsection-container {
   display: flex;
   flex-direction: column;
@@ -908,7 +925,7 @@ address {
   width: 100%;
 }
 
-.contact-subsection-title {
+.subsection-title {
   margin: 0.5rem;
   color: #464b37;
   font-weight: 400;
