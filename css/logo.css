@@ -14,14 +14,14 @@ body {
     flex-direction: column;
   }
   
+  .chocolate {
+    background: #c8a172;
+    border: 6px solid #a47741;
+  }
+  
   .vanilla {
     background: #fff5e0;
     border: 6px solid #e6d2aa;
-  }
-  
-  .chocolate {
-    background: transparent;
-    border: 6px solid transparent;
   }
   
   .strawberry {
@@ -46,13 +46,13 @@ body {
   
   .scoop-detail {
     width: 35px;
-    height: 25px;
+    height: 22px;
     border-radius: 50%;
     border-top-color: transparent;
     position: relative;
   }
 
-  .scoop-detail.vanilla {
+  .scoop-detail.chocolate {
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
   }
   
@@ -60,19 +60,18 @@ body {
     left: -23px;
     transform: rotate(36deg);
     z-index: 2;
-    border-radius: 100;
-    height: 23px;
+    border-radius: 50%;
   }
   
   .d2 {
     left: -34px;
-    transform: rotate(12deg);
+    transform: rotate(10deg);
     z-index: 3;
   }
   
   .d3 {
     left: -44px;
-    transform: rotate(348deg);
+    transform: rotate(358deg);
     z-index: 4;
   }
   
@@ -80,13 +79,10 @@ body {
     left: -54px;
     transform: rotate(324deg);
     z-index: 2;
-    height: 23px;
   }
-
-
   
-  .scoop.chocolate {
-    top: 20px;
+  .scoop.vanilla {
+    top: 34px;
     z-index: 1;
   }
   
@@ -94,37 +90,41 @@ body {
     top: 40px;
     z-index: 2;
   }
-  
-  .scoop-detail.vanilla.d1 {
-    top: -168px;
-  }
-  
-  .scoop-detail.vanilla.d2 {
-    top: -158px;
-  }
-  
-  .scoop-detail.vanilla.d3 {
-    top: -158px;
-  }
-  
-  .scoop-detail.vanilla.d4 {
-    top: -168px;
+
+  .scoop.chocolate {
+    top: 4px;
   }
   
   .scoop-detail.chocolate.d1 {
-    top: -278px;
+    top: -168px;
   }
   
   .scoop-detail.chocolate.d2 {
-    top: -268px;
+    top: -158px;
   }
   
   .scoop-detail.chocolate.d3 {
-    top: -268px;
+    top: -158px;
   }
   
   .scoop-detail.chocolate.d4 {
-    top: -278px;
+    top: -168px;
+  }
+  
+  .scoop-detail.vanilla.d1 {
+    top: -268px;
+  }
+  
+  .scoop-detail.vanilla.d2 {
+    top: -258px;
+  }
+  
+  .scoop-detail.vanilla.d3 {
+    top: -258px;
+  }
+  
+  .scoop-detail.vanilla.d4 {
+    top: -268px;
   }
   
   .scoop-detail.strawberry.d1 {
@@ -145,11 +145,11 @@ body {
   
   .cone {
     width: 0;
-    height: 0;
+    height: 4px;
     border-left: 56px solid transparent;
     border-right: 56px solid transparent;
     border-top: 150px solid #ffd685;
-    z-index: -1;
+    z-index: -10;
   }
   
   .cone-detail {
@@ -180,6 +180,10 @@ body {
     left: 50px;
     top: -124px;
     z-index: -2;
+  }
+
+  .test {
+    border: 1px solid red;
   }
   
   .cone-line {
