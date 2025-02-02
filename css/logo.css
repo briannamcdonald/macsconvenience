@@ -1,5 +1,7 @@
 body {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Overpass", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 17px;
     background-color: #eee;
 }
@@ -244,10 +246,11 @@ body {
   }
 
   .logo-text {
-    font-family: 'Roboto Slab', sans-serif;
+    --drop-shadow-value: 0.015em;
+    font-family: "Overpass", serif;
     position: absolute;
-    top: 175px;
-    left: 58px;
+    top: 260px;
+    left: 55px;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -255,12 +258,23 @@ body {
     align-items: center;
     text-align: center;
     padding: 0.2rem;
+    -webkit-text-fill-color: black;
+    /* border: 1px solid red; */
   }
 
   .logo-top-text {
     font-weight: 700;
     font-size: 3rem;
     letter-spacing: 0.3rem;
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* -webkit-text-stroke: 2px white; */
+    margin-bottom: -10px;
   }
 
   logo-top-text:after {
@@ -273,4 +287,39 @@ body {
     font-weight: 700;
     font-size: 1.35rem;
     letter-spacing: 0.1rem;
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* -webkit-text-stroke: 1.25px white; */
   }
+
+/* .logo-text span {
+    filter: 
+        drop-shadow(var(--drop-shadow-value) var(--drop-shadow-value) white)
+        drop-shadow(var(--drop-shadow-value) var(--drop-shadow-value) white)
+        drop-shadow(var(--drop-shadow-value) var(--drop-shadow-value) white)
+        drop-shadow(var(--drop-shadow-value) var(--drop-shadow-value) white)
+        drop-shadow(var(--drop-shadow-value) var(--drop-shadow-value) white)
+        
+        drop-shadow(0 calc(-1 * var(--drop-shadow-value)) white)
+        drop-shadow(0 calc(-1 * var(--drop-shadow-value)) white)
+        drop-shadow(0 calc(-1 * var(--drop-shadow-value)) white)
+        drop-shadow(0 calc(-1 * var(--drop-shadow-value)) white)
+        drop-shadow(0 calc(-1 * var(--drop-shadow-value)) white)
+        
+        drop-shadow(calc(-1 * var(--drop-shadow-value)) 0 white)
+        drop-shadow(calc(-1 * var(--drop-shadow-value)) 0 white)
+        drop-shadow(calc(-1 * var(--drop-shadow-value)) 0 white)
+        drop-shadow(calc(-1 * var(--drop-shadow-value)) 0 white)
+        drop-shadow(calc(-1 * var(--drop-shadow-value)) 0 white)
+        
+        drop-shadow(var(--drop-shadow-value) 0 white)
+        drop-shadow(var(--drop-shadow-value) 0 white)
+        drop-shadow(var(--drop-shadow-value) 0 white)
+        drop-shadow(var(--drop-shadow-value) 0 white)
+        drop-shadow(var(--drop-shadow-value) 0 white);
+} */
