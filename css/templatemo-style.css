@@ -192,14 +192,14 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Overpass', sans-serif;
   font-size: 17px;
   background-color: #eee;
   overflow-x: hidden;
 }
 
 .container {
-  background-color: #eeeeeecc;
+  background-color: #eee;
 }
 
 p, address {
@@ -250,15 +250,15 @@ address:last-child {
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: black;
   z-index: 1000;
-  background-color: #62291b;
+  background-color: #C9BFAF;
   padding: 0;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.7);
 }
 
 .tm-header-inner {
-  padding: 20px 25px;
+  padding: 6px 25px 0 25px;
 }
 
 @media (max-width: 991px) {
@@ -269,18 +269,13 @@ address:last-child {
 
 .tm-site-logo {
   display: inline-block;
-  margin-right: 5px;
-  width: 40px;
+  margin: 0.35rem 5px 0.25rem 0;
+  width: 150px;
+  padding: 0;
 }
 
 .tm-site-text-box {
   display: inline-block;
-}
-
-.tm-site-title {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: -5px;
 }
 
 .tm-site-description {
@@ -304,6 +299,8 @@ address:last-child {
   margin-bottom: 0;
   padding-right: 25px;
   padding-left: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 991px) {
@@ -314,17 +311,17 @@ address:last-child {
 }
 
 .tm-nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   padding-bottom: 10px;
 }
 
 .tm-nav-link.active,
 .tm-nav-link:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
-.tm-welcome-section, .announcements-section {
+.tm-welcome-section, .announcements-description {
   margin: 60px auto;
   margin-bottom: 30px;
   max-width: 780px;
@@ -570,7 +567,7 @@ address:last-child {
   right: 30px;
   z-index: 99;
   font-size: 1rem;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Overpass', sans-serif;
   border: none;
   outline: none;
   background-color: #555;
@@ -927,7 +924,7 @@ address {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   font-size: 1.2rem;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Overpass', sans-serif;
   color: #999;
   background-color: transparent;
   border: 1px solid #d0d0d0;
@@ -971,7 +968,7 @@ address {
 }
 
 .accordion:after {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Overpass', sans-serif;
   font-weight: 900;
   animation: changeIconBack 0.3s linear;
   content: '\f0d9';
@@ -999,7 +996,51 @@ address {
 }
 
 .announcements-section {
+  background-color: #e5e5e5;
+  padding-bottom: 4.5rem;
+  padding-top: 0.1rem;
+}
+
+.announcements-description {
   margin-bottom: 55px;
+}
+
+.hero-text-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute; 
+  top: 85px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 1rem;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+
+.hero-text-overlay-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  font-size: 0.65rem;
+}
+
+.hero-text {
+  margin-bottom: -5px;
+}
+
+.location-icon {
+  height: 1.5rem;
+  color: #763641;
 }
 
 #fb-root {
@@ -1040,7 +1081,7 @@ address {
 
 .subsection-title {
   margin: 0.5rem;
-  color: #464b37;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
 }
 
