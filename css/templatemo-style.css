@@ -575,10 +575,22 @@ address:last-child {
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
 }
 
 .back-to-top-btn:hover {
-  background-color: #333;
+  background-color: #666;
+}
+
+.back-to-top-text {
+  margin-bottom: -3px;
+}
+
+.back-to-top-icon {
+  height: 20px;
+  margin: 0;
 }
 
 footer {

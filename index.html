@@ -42,7 +42,7 @@
 		<main>
 			<header class="row tm-welcome-section" id="about">
 				<h2 class="col-12 text-center tm-section-title">About Our Store</h2>
-				<p class="col-12 text-center">Mac’s Convenience is a fully equipped gas bar and convenience store located in Bay d'Espoir, Newfoundland. <br />
+				<p class="col-12 text-center">Mac’s Convenience is a fully equipped gas bar and convenience store. <br />
 					We sell gas, diesel, beer, cigarettes, soft serve, slushies, giftware, and much more!</p>
 			</header>
 
@@ -97,7 +97,7 @@
 
 		<div class="announcements-section" id="announcements">
 			<header class="row announcements-description">
-				<h2 class="col-12 text-center tm-section-title">Store Announcements</h2>
+				<h2 class="col-12 text-center tm-section-title">Announcements</h2>
 				<p class="col-12 text-center fb-description">See our Facebook page below for updates on sales, new products, and more.</p>
 			</header>
 
@@ -207,7 +207,10 @@
 			</div>
 		</div>
 
-		<button id="backToTopBtn" class="back-to-top-btn" onclick="topFunction()" title="Back to top">Back to Top</button>
+		<button id="backToTopBtn" class="back-to-top-btn" onclick="topFunction()" title="Back to top">
+			<img class="back-to-top-icon" src="img/arrowicon.png" alt="Back to top" />
+			<div class="back-to-top-text">Back to top</div>
+		</button>
 
 		<footer class="tm-footer text-center">
 			<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Mac's Convenience | Design: <a rel="nofollow" href="https://briannamcdonald.me/portfolio-website">Brianna McDonald</a> </p>
@@ -230,15 +233,17 @@
 
 		scrollFunction = () => {
 			if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-				backToTopBtn.style.display = "block";
+				backToTopBtn.style.display = "flex";
 			} else {
 				backToTopBtn.style.display = "none";
 			}
 		}
 
 		topFunction = () => {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
 		}
 	</script>
 </body>
