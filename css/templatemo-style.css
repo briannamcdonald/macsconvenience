@@ -227,7 +227,7 @@ address:last-child {
 }
 
 .parallax-window {
-  min-height: 80vh;
+  min-height: 83vh;
   background: transparent;
   position: relative;
 }
@@ -252,13 +252,13 @@ address:last-child {
   width: 100%;
   color: black;
   z-index: 1000;
-  background-color: #C9BFAF;
+  background-color: rgba(201, 191, 175, 0.98);
   padding: 0;
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.7);
 }
 
 .tm-header-inner {
-  padding: 6px 25px 0 25px;
+  padding: 10px 25px 0 25px;
 }
 
 @media (max-width: 991px) {
@@ -269,7 +269,7 @@ address:last-child {
 
 .tm-site-logo {
   display: inline-block;
-  margin: 0.35rem 5px 0.25rem 0;
+  margin: 0;
   width: 150px;
   padding: 0;
 }
@@ -880,6 +880,14 @@ address {
   width: 20px;
 }
 
+.contact-icon {
+  height: 40px;
+  width: 40px;
+  padding: 0.4rem;
+  border: 2px solid #626364;
+  border-radius: 50%;
+}
+
 .tm-contact-link {
   display: inline-block;
   color: #626364;
@@ -896,8 +904,7 @@ address {
 }
 
 .tm-map {
-  max-width: 900px;
-  height: 450px;
+  height: 625px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -913,8 +920,7 @@ address {
 }
 
 .tm-map-section {
-  padding-bottom: 40px;
-  padding-top: 30px;
+  height: 100%;
   width: 100%;
 }
 
@@ -1069,6 +1075,16 @@ address {
   margin-bottom: -50px;
 }
 
+.contact-row, .contact-info-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-row {
+  width: 65vw;
+  margin-bottom: 0;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -1077,18 +1093,30 @@ address {
   text-align: center;
   margin-top: 60px;
   width: 100%;
+  margin-bottom: 60px;
 }
 
-.contact-info-section {
-  width: 300px;
-  margin: 20px auto;
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  height: 100%;
+  margin: auto;
+}
+
+.contact-info-col-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  justify-content: space-evenly;
 }
 
 .contact-subsection-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  width: 100%;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 60%;
 }
 
 .subsection-title {
