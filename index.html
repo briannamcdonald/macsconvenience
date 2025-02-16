@@ -51,45 +51,63 @@
 				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src="img/2icecream.jpg" alt="Soft Serve Cone" class="img-fluid tm-gallery-img" />
+							<div class="img-container">
+								<img src="img/2icecream.jpg" alt="Ice Cream Flavors" class="img-fluid tm-gallery-img">
+								<figcaption>Wide Variety of <br /> Ice Cream Flavors</figcaption>
+							</div>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src="img/softserve_blur.png" alt="Slushies" class="img-fluid tm-gallery-img" />
+							<div class="img-container">
+								<img src="img/softserve_blur.png" alt="Soft Serve Cone" class="img-fluid tm-gallery-img" />
+								<figcaption>Soft Serve Cones</figcaption>
+							</div>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src="img/slushies2.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<div class="img-container">
+								<img src="img/slushies2.jpg" alt="Slushies" class="img-fluid tm-gallery-img" />
+								<figcaption>Slushies</figcaption>
+							</div>
 						</figure>
 					</article>
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src="img/icecreamnachos.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<div class="img-container">
+								<img src="img/icecreamnachos.jpg" alt="Ice Cream Nachos" class="img-fluid tm-gallery-img" />
+								<figcaption>Ice Cream Nachos</figcaption>
+							</div>
 						</figure>
 					</article>
 				</div>
 				<div class="gallery-container">
 					<div class="gallery-grid">
-						<div class="gallery-item">
-							<img src="img/fireworks.jpg" alt="TODO">
-						</div>
-						<div class="gallery-item">
+						<figure class="gallery-item img-container">
+							<img src="img/fireworks.jpg" alt="Fireworks">
+							<figcaption>Fireworks</figcaption>
+						</figure>
+						<figure class="gallery-item img-container">
 							<img src="img/biosteel.jpg" alt="TODO">
-						</div>
-						<div class="gallery-item">
+							<figcaption>Sports Drinks</figcaption>
+						</figure>
+						<figure class="gallery-item img-container">
 							<img src="img/quidividibeer.jpg" alt="TODO">
-						</div>
-						<div class="gallery-item">
+							<figcaption>Beer TODO</figcaption>
+						</figure>
+						<figure class="gallery-item img-container">
 							<img src="img/morebeer.jpg" alt="TODO">
-						</div>
-						<div class="gallery-item">
-							<img src="img/fishing.jpg" alt="TODO">
-						</div>
-						<div class="gallery-item">
-							<img src="img/hats.jpg" alt="TODO">
-						</div>
+							<figcaption>Beer TODO</figcaption>
+						</figure>
+						<figure class="gallery-item img-container">
+							<img src="img/fishing.jpg" alt="Darts">
+							<figcaption>Darts Supplies and Memorabilia</figcaption>
+						</figure>
+						<figure class="gallery-item img-container">
+							<img src="img/wool.jpg" alt="Wool and Knitting Supplies">
+							<figcaption>Wool and Knitting Supplies</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
@@ -248,6 +266,18 @@
 				behavior: 'smooth'
 			});
 		}
+	</script>
+	<script>
+		document.querySelectorAll('figure').forEach(figure => {
+			figure.addEventListener('mouseover', () => {
+				figure.querySelector('figcaption').style.opacity = '1';
+				figure.querySelector('figcaption').style.transition = 'opacity 0.3s';
+			});
+			figure.addEventListener('mouseout', () => {
+				figure.querySelector('figcaption').style.opacity = '0';
+				figure.querySelector('figcaption').style.transition = 'opacity 0.3s';
+			});
+		});
 	</script>
 </body>
 </html>
