@@ -13,17 +13,26 @@
 	<div class="container">
 		<!-- Header -->
 		<div class="tm-header">
-			<div class="row tm-header-inner">
-				<div class="col-md-6 col-12">
-					<img src="img/transparentlogo.png" alt="Logo" class="tm-site-logo" /> 
-				</div>
-				<nav class="col-md-6 col-12 tm-nav">
-					<ul class="tm-nav-ul">
-						<li class="tm-nav-li"><a href="#about" class="tm-nav-link">ABOUT</a></li>
-						<li class="tm-nav-li"><a href="#announcements" class="tm-nav-link">ANNOUNCEMENTS</a></li>
-						<li class="tm-nav-li"><a href="#contact" class="tm-nav-link">CONTACT</a></li>
-					</ul>
-				</nav>	
+			<div class="tm-header-inner">
+				<img src="img/transparentlogo.png" alt="Logo" class="tm-site-logo" /> 
+				
+				<button class="nav-toggle" aria-label="Toggle navigation">
+					<span class="hamburger"></span>
+				</button>
+
+				<ul class="tm-nav-ul">
+					<li class="tm-nav-li"><a href="#about" class="tm-nav-link">ABOUT</a></li>
+					<li class="tm-nav-li"><a href="#announcements" class="tm-nav-link">ANNOUNCEMENTS</a></li>
+					<li class="tm-nav-li"><a href="#contact" class="tm-nav-link">CONTACT</a></li>
+				</ul>
+			</div>
+
+			<div class="mobile-nav">
+				<ul class="mobile-nav-ul">
+					<li class="mobile-nav-li"><a href="#about" class="mobile-nav-link">ABOUT</a></li>
+					<li class="mobile-nav-li"><a href="#announcements" class="mobile-nav-link">ANNOUNCEMENTS</a></li>
+					<li class="mobile-nav-li"><a href="#contact" class="mobile-nav-link">CONTACT</a></li>
+				</ul>
 			</div>
 		</div>
 		<!-- Logo & Site Name -->
@@ -277,6 +286,31 @@
 				figure.querySelector('figcaption').style.opacity = '0';
 				figure.querySelector('figcaption').style.transition = 'opacity 0.3s';
 			});
+		});
+	</script>
+	<script>
+		const navToggle = document.querySelector('.nav-toggle');
+		const mobileNav = document.querySelector('.mobile-nav');
+		const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+		navToggle.addEventListener('click', () => {
+			const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+			navToggle.setAttribute('aria-expanded', !isExpanded);
+			mobileNav.classList.toggle('active');
+		});
+
+		mobileNavLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				mobileNav.classList.remove('active');
+				navToggle.setAttribute('aria-expanded', 'false');
+			});
+		});
+
+		document.addEventListener('click', (e) => {
+			if (!mobileNav.contains(e.target) && !navToggle.contains(e.target)) {
+				mobileNav.classList.remove('active');
+				navToggle.setAttribute('aria-expanded', 'false');
+			}
 		});
 	</script>
 </body>
