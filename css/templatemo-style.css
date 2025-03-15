@@ -516,13 +516,12 @@ address:last-child {
   grid-area: img6;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1192px) {
+@media (max-width: 992px) {
   .gallery-grid {
-    max-width: 976px;
+    max-width: 851px;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 155px);
+    grid-template-rows: repeat(3, 130px);
     gap: 26px;
     grid-template-areas: 
         "img1 img2 img3"
@@ -531,7 +530,7 @@ address:last-child {
   }
 
   .gallery-container {
-    max-width: 976px;
+    max-width: 851px;
   }
 }
 
