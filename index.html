@@ -160,6 +160,26 @@
 						<figcaption>Wool and Knitting Supplies</figcaption>
 					</figure>
 				</div>
+				<div class="mobile-gallery-grid">
+					<figure class="gallery-item img-container">
+						<img src="img/fireworks.jpg" alt="Fireworks">
+						<figcaption>Fireworks</figcaption>
+					</figure>
+					<div class="gallery-row">
+						<figure class="gallery-item img-container">
+							<img src="img/biosteel.jpg" alt="TODO">
+							<figcaption>Sports Drinks</figcaption>
+						</figure>
+						<figure class="gallery-item img-container">
+							<img src="img/morebeer.jpg" alt="TODO">
+							<figcaption>Beer TODO</figcaption>
+						</figure>
+					</div>
+					<figure class="gallery-item img-container">
+						<img src="img/fishing.jpg" alt="Darts">
+						<figcaption>Darts Supplies and Memorabilia</figcaption>
+					</figure>
+				</div>
 			</div>
 		</main>
 
@@ -168,26 +188,17 @@
 				<h2 class="col-12 text-center tm-section-title">Announcements</h2>
 				<p class="col-12 text-center fb-description">See our Facebook page below for updates on sales, new products, and more.</p>
 			</header>
-
-			<div id="fb-root">
-				<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
-				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-				<div 
-					class="fb-page" 
-					data-href="https://www.facebook.com/CGConvenience/" 
-					data-tabs="timeline,messages" 
-					data-width="500" 
-					data-height="" 
-					data-small-header="false" 
-					data-adapt-container-width="true" 
-					data-hide-cover="false" 
-					data-show-facepile="true"
-					style="display: block; margin: 0 auto;">
-					<blockquote cite="https://www.facebook.com/CGConvenience/" class="fb-xfbml-parse-ignore">
-						<a href="https://www.facebook.com/CGConvenience/">Mac's Convenience</a>
-					</blockquote>
-				</div>
-			</div>
+			<iframe 
+				id="fb-root" 
+				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCGConvenience&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+				width="500" 
+				height="500" 
+				style="overflow:hidden" 
+				scrolling="no" 
+				frameborder="0" 
+				allowfullscreen="true" 
+				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+			/>
 		</div>
 
 		<div class="contact-section" id="contact">
@@ -242,7 +253,7 @@
 							</div>
 						</address>
 					</div>
-					<div class="contact-info-col">
+					<div class="contact-subsection">
 						<h4 class="tm-info-title subsection-title">Contact</h4>
 						<div class="contact-info-col-inner">
 							<a href="tel:709-882-2564" class="tm-contact-link">
@@ -287,6 +298,7 @@
 			<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Mac's Convenience&nbsp;&nbsp;|&nbsp;&nbsp;Design: <a rel="nofollow" href="https://briannamcdonald.me/portfolio-website">Brianna McDonald</a> </p>
 		</footer>
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="js/parallax.min.js"></script>
 	<script>
 		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -357,20 +369,33 @@
 	<script>
 		function adjustFacebookWidth() {
 			const fbPage = document.querySelector('.fb-page');
+			const fbIframe = document.getElementById('fb-root');
 			if (window.innerWidth <= 320) {
-				fbPage.setAttribute('data-width', '280');
+				fbIframe.setAttribute('data-width', '280');
+				const src = fbIframe.getAttribute('src').replace(/width=\d+/, 'width=280');
+				fbIframe.setAttribute('src', src);
 			} else if (window.innerWidth <= 360) {
-				fbPage.setAttribute('data-width', '300');
+				const src = fbIframe.getAttribute('src').replace(/width=\d+/, 'width=300');
+				fbIframe.setAttribute('src', src);
+				fbIframe.setAttribute('data-width', '300');
 			} else if (window.innerWidth <= 576) {
-				fbPage.setAttribute('data-width', '400');
+				const src = fbIframe.getAttribute('src').replace(/width=\d+/, 'width=400');
+				fbIframe.setAttribute('src', src);
+				fbIframe.setAttribute('data-width', '400');
 			} else if (window.innerWidth <= 768) {
-				fbPage.setAttribute('data-width', '450');
+				const src = fbIframe.getAttribute('src').replace(/width=\d+/, 'width=450');
+				fbIframe.setAttribute('src', src);
+				fbIframe.setAttribute('data-width', '450');
 			} else {
-				fbPage.setAttribute('data-width', '500');
+				const src = fbIframe.getAttribute('src').replace(/width=\d+/, 'width=500');
+				fbIframe.setAttribute('src', src);
+				fbIframe.setAttribute('data-width', '500');
 			}
-			// Reload the Facebook plugin to apply the new width
-			if (FB) FB.XFBML.parse();
 		}
+
+		window.addEventListener('resize', () => {
+			console.log(`Width: ${window.innerWidth}, Height: ${window.innerHeight}`);
+		});
 
 		window.addEventListener('load', adjustFacebookWidth);
 		window.addEventListener('resize', adjustFacebookWidth);

@@ -458,9 +458,19 @@ address:last-child {
 
 .gallery-container {
   margin: 0 auto;
-  margin-top: 22px;
   display: flex;
   padding: 0 40px;
+}
+
+.mobile-gallery-grid {
+  display: none;
+  margin: 0 auto;
+  padding: 0 13px;
+  gap: 26px;
+}
+
+.mobile-gallery-grid .gallery-row {
+  gap: 26px;
 }
 
 .gallery-grid {
@@ -557,6 +567,7 @@ address:last-child {
   flex-wrap: wrap;
   row-gap: 26px;
   padding: 0 26px;
+  margin-bottom: 6px;
   justify-content: center;
   align-items: center;
 }
@@ -710,6 +721,16 @@ address:last-child {
   .tm-gallery-item {
     max-width: 300px;
   }
+
+  .gallery-grid {
+    display: none;
+  }
+
+  .mobile-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 691px) {
@@ -731,9 +752,13 @@ address:last-child {
   .tm-gallery-item {
     max-width: 250px;
   }
+
+  .mobile-gallery-grid {
+    max-width: 500px;
+  }
 }
 
-@media (max-width: 541px) {
+@media (max-width: 591px) {
   .tm-gallery-page,
   .gallery-container,
   .tm-section {
@@ -751,6 +776,10 @@ address:last-child {
   
   .tm-gallery-item {
     max-width: 200px;
+  }
+
+  .mobile-gallery-grid {
+    max-width: 400px;
   }
 }
 
@@ -1522,12 +1551,31 @@ address {
 
 #fb-root {
   margin: 0 auto;
-  width: 500px;
-  max-width: 500px;
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  #fb-root {
+    max-width: 450px;
+  }
+}
+@media (max-width: 576px) {
+  #fb-root {
+    max-width: 400px;
+  }
+}
+@media (max-width: 360px) {
+  #fb-root {
+    max-width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  #fb-root {
+    max-width: 280px;
+  }
 }
 
 .fb-description {
@@ -1594,9 +1642,8 @@ address {
 .contact-info-col {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .contact-info-col-inner {
