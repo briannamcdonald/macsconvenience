@@ -444,7 +444,7 @@ address:last-child {
 }
 
 .tm-welcome-section, .announcements-description {
-  margin: 60px auto;
+  margin: 3rem auto;
   margin-bottom: 30px;
   max-width: 780px;
   font-size: 1.2rem;
@@ -460,6 +460,7 @@ address:last-child {
   margin: 0 auto;
   display: flex;
   padding: 0 40px;
+  margin-bottom: 4rem;
 }
 
 .mobile-gallery-grid {
@@ -478,6 +479,7 @@ address:last-child {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 180px);
   gap: 30px;
+  margin-top: 18px;
   grid-template-areas: 
       "img1 img2 img3"
       "img4 img2 img6"
@@ -530,6 +532,7 @@ address:last-child {
   .gallery-grid {
     max-width: 851px;
     margin: auto;
+    margin-top: 12px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 130px);
     gap: 26px;
@@ -1362,7 +1365,6 @@ address {
   content: '\f0d7';
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   background-color: white;
   max-height: 0;
@@ -1377,7 +1379,7 @@ address {
 .announcements-section {
   background-color: #e5e5e5;
   padding-bottom: 4.5rem;
-  padding-top: 0.1rem;
+  margin-top: 3rem;
 }
 
 .announcements-description {

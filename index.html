@@ -197,8 +197,8 @@
 				scrolling="no" 
 				frameborder="0" 
 				allowfullscreen="true" 
-				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-			/>
+				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+			</iframe>
 		</div>
 
 		<div class="contact-section" id="contact">
@@ -305,8 +305,13 @@
 			anchor.addEventListener('click', function(e) {
 				e.preventDefault();
 				document.querySelector(this.getAttribute('href')).scrollIntoView({
-					behavior: 'smooth'
+					behavior: 'instant',
 				});
+
+				let scrolledY = window.scrollY;
+				if (scrolledY){
+					window.scroll(0, scrolledY - 100);
+				}
 			});
 		});
 	</script>
