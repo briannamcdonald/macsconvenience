@@ -1334,6 +1334,12 @@ address {
   margin-bottom: 0;
 }
 
+@media (max-width: 400px) {
+  .hours-row {
+    width: 175px;
+  }
+}
+
 .tm-contact-icon {
   display: inline-block;
   margin-right: 5px;
