@@ -18,6 +18,7 @@ a, button { transition: all 0.3s ease; }
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+  overflow-x: hidden;
 }
 
 *,
@@ -454,6 +455,36 @@ address:last-child {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+  .tm-section-title {
+    font-size: 1.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tm-section-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tm-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tm-section-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .tm-section-title {
+    font-size: 1rem;
+  }
 }
 
 .gallery-container {
@@ -1668,6 +1699,70 @@ address {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
 }
+
+@media (max-width: 992px) {
+  .subsection-title {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subsection-title {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .subsection-title {
+    font-size: 1.25rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  address, .contact-info-col-inner, .contact-info-col-inner, figcaption {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subsection-title {
+    font-size: 1rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  address, .contact-info-col-inner, .contact-info-col-inner, figcaption {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .subsection-title {
+    font-size: 0.75rem;
+  }
+
+  header p {
+    font-size: 0.7rem;
+  }
+
+  address, .contact-info-col-inner, .contact-info-col-inner, figcaption {
+    font-size: 0.7rem;
+  }
+}
+
+/* TODO: description text and contact section text, gallery caption text */
 
 .test {
   border: 1px solid red;
