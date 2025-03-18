@@ -465,25 +465,25 @@ address:last-child {
 
 @media (max-width: 768px) {
   .tm-section-title {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 576px) {
   .tm-section-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
 @media (max-width: 480px) {
   .tm-section-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 360px) {
   .tm-section-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -765,6 +765,10 @@ address:last-child {
     flex-wrap: wrap;
     max-width: 600px;
   }
+
+  .dart-img {
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 691px) {
@@ -790,6 +794,10 @@ address:last-child {
   .mobile-gallery-grid {
     max-width: 500px;
   }
+
+  .dart-img {
+    max-height: 250px;
+  }
 }
 
 @media (max-width: 591px) {
@@ -814,6 +822,63 @@ address:last-child {
 
   .mobile-gallery-grid {
     max-width: 400px;
+  }
+
+  .dart-img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 460px) { 
+  .tm-gallery-img {
+    height: 175px;
+    width: 175px;
+  }
+  
+  .tm-gallery-item {
+    max-width: 175px;
+  }
+
+  .mobile-gallery-grid {
+    max-width: 400px;
+  }
+
+  .dart-img {
+    max-height: 175px;
+  }
+}
+
+@media (max-width: 420px) { 
+  .tm-gallery-img {
+    height: 165px;
+    width: 165px;
+  }
+  
+  .tm-gallery-item {
+    max-width: 165px;
+  }
+
+  .mobile-gallery-grid {
+    max-width: 350px;
+  }
+
+  .dart-img {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 360px) { 
+  .tm-gallery-img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .tm-gallery-item {
+    max-width: 150px;
+  }
+
+  .mobile-gallery-grid {
+    max-width: 300px;
   }
 }
 
@@ -1600,12 +1665,17 @@ address {
     max-width: 400px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
+  #fb-root {
+    max-width: 350px;
+  }
+}
+@media (max-width: 3500px) {
   #fb-root {
     max-width: 300px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 300px) {
   #fb-root {
     max-width: 280px;
   }
@@ -1722,7 +1792,7 @@ address {
 
 @media (max-width: 576px) {
   .subsection-title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   header p {
@@ -1732,11 +1802,17 @@ address {
   address, .contact-info-col-inner, .contact-info-col-inner, figcaption {
     font-size: 1rem;
   }
+
+  .tm-container-inner,
+  .tm-container-inner-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .subsection-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   header p {
@@ -1759,6 +1835,12 @@ address {
 
   address, .contact-info-col-inner, .contact-info-col-inner, figcaption {
     font-size: 0.7rem;
+  }
+
+  .tm-container-inner,
+  .tm-container-inner-2 {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
