@@ -18,9 +18,6 @@ a, button { transition: all 0.3s ease; }
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -1492,7 +1489,8 @@ address {
 .announcements-section {
   background-color: #e5e5e5;
   padding-bottom: 4.5rem;
-  margin-top: 3rem;
+  margin-top: 3rem !important;
+  overflow: hidden;
 }
 
 .announcements-description {

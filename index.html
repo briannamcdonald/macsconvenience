@@ -310,7 +310,9 @@
 
 				let scrolledY = window.scrollY;
 				if (scrolledY){
-					window.scroll(0, scrolledY - 100);
+					if (anchor.innerHTML !== 'ANNOUNCEMENTS') {
+						window.scroll(0, scrolledY - 40);
+					}
 				}
 			});
 		});
