@@ -18,6 +18,9 @@ a, button { transition: all 0.3s ease; }
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -727,7 +730,8 @@ address:last-child {
 
 @media (max-width: 891px) {
   .tablet-gallery {
-    display: block;
+    display: flex;
+    gap: 6px;
   }
   
   .tm-gallery-item {
@@ -1683,7 +1687,7 @@ address {
     max-width: 350px;
   }
 }
-@media (max-width: 3500px) {
+@media (max-width: 350px) {
   #fb-root {
     max-width: 300px;
   }
