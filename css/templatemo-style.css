@@ -830,7 +830,13 @@ address:last-child {
   }
 }
 
-@media (max-width: 460px) { 
+@media (max-width: 480px) { 
+  .tm-gallery-page,
+  .gallery-container {
+    min-width: 350px;
+    padding: 0 10px;
+  }
+
   .tm-gallery-img {
     height: 175px;
     width: 175px;
@@ -841,7 +847,7 @@ address:last-child {
   }
 
   .mobile-gallery-grid {
-    max-width: 400px;
+    max-width: 350px;
   }
 
   .dart-img {
@@ -849,7 +855,7 @@ address:last-child {
   }
 }
 
-@media (max-width: 420px) { 
+@media (max-width: 430px) { 
   .tm-gallery-img {
     height: 165px;
     width: 165px;
@@ -860,7 +866,7 @@ address:last-child {
   }
 
   .mobile-gallery-grid {
-    max-width: 350px;
+    max-width: 330px;
   }
 
   .dart-img {
