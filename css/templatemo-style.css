@@ -376,6 +376,15 @@ address:last-child {
   .tm-section-title {
     font-size: 1.7rem;
   }
+
+  .tm-welcome-section, .announcements-description {
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+  }
+
+  .tm-section-title {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -395,6 +404,13 @@ address:last-child {
   display: flex;
   padding: 0 40px;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 576px) {
+  .gallery-container {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .mobile-gallery-grid {
@@ -983,6 +999,12 @@ address {
   padding-bottom: 30px;
 }
 
+@media (max-width: 576px) {
+  .tm-contact-section {
+    padding-bottom: 0;
+  }
+}
+
 .tm-map-section {
   height: 100%;
   width: 100%;
@@ -997,6 +1019,12 @@ address {
   padding-bottom: 4.5rem;
   margin-top: 3rem !important;
   overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .announcements-section {
+    margin-top: 2rem;
+  }
 }
 
 .announcements-description {
@@ -1206,6 +1234,16 @@ address {
   margin-bottom: -50px;
 }
 
+@media (max-width: 576px) {
+  .fb-description {
+    margin-bottom: -40px;
+  }
+
+  #fb-root {
+    margin-bottom: -30px;
+  }
+}
+
 .contact-row, .contact-info-row {
   display: flex;
   flex-direction: row;
@@ -1263,6 +1301,13 @@ address {
   margin-bottom: 60px;
 }
 
+@media (max-width: 576px) {
+  .contact-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .contact-info-col {
   display: flex;
   flex-direction: column;
@@ -1283,6 +1328,12 @@ address {
   justify-content: space-evenly;
   gap: 1rem;
   width: 60%;
+}
+
+@media (max-width: 576px) {
+  .contact-subsection-container {
+    gap: 0.25rem;
+  }
 }
 
 .subsection-title {
