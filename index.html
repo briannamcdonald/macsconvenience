@@ -325,7 +325,7 @@
 		window.onscroll = () => scrollFunction();
 
 		scrollFunction = () => {
-			if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+			if (document.body.scrollTop > document.documentElement.scrollHeight * 0.1 || document.documentElement.scrollTop > document.documentElement.scrollHeight * 0.1) {
 				backToTopBtn.style.display = "flex";
 			} else {
 				backToTopBtn.style.display = "none";
