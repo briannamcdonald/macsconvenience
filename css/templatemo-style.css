@@ -995,6 +995,11 @@ address {
   height: 100%;
 }
 
+.mobile-map {
+  display: none;
+  margin-top: 1rem;
+}
+
 .tm-contact-section {
   padding-bottom: 30px;
 }
@@ -1205,27 +1210,34 @@ address {
 }
 
 @media (max-width: 768px) {
-  #fb-root {
+  #fb-root, .tm-map {
     max-width: 450px;
+  }
+
+  .mobile-map {
+    display: block;
+  }
+  .desktop-map {
+    display: none;
   }
 }
 @media (max-width: 576px) {
-  #fb-root {
+  #fb-root, .tm-map {
     max-width: 400px;
   }
 }
 @media (max-width: 400px) {
-  #fb-root {
+  #fb-root, .tm-map {
     max-width: 350px;
   }
 }
 @media (max-width: 350px) {
-  #fb-root {
+  #fb-root, .tm-map {
     max-width: 300px;
   }
 }
 @media (max-width: 300px) {
-  #fb-root {
+  #fb-root, .tm-map {
     max-width: 280px;
   }
 }
